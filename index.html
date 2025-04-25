@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kane's Developer Profile</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/70007189" />
   <style>
     * {
       margin: 0;
@@ -29,13 +31,28 @@
       backdrop-filter: blur(10px);
     }
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
       margin-bottom: 1rem;
     }
 
-    p, li {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    p,
+    li {
       font-size: 1.1rem;
       line-height: 1.6;
     }
@@ -72,12 +89,28 @@
     .contact a:hover {
       color: #81d4fa;
     }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <h1>👋 Hi, I'm Kane</h1>
-    <p>I'm a Software Developer with 4+ years of experience working in startups, focusing on clean, optimized, and maintainable code.</p>
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/70007189" alt="Avatar" class="avatar">
+      <h1>👋 Hi, I'm Kane</h1>
+    </header>
+
+    <p>I'm a Software Developer with 4+ years of experience working in startups, focusing on clean, optimized, and
+      maintainable code.</p>
 
     <div class="section">
       <h2>💻 Tech Stack</h2>
@@ -85,11 +118,6 @@
       <p class="stack">🌐 Frontend: Vue.js, React</p>
       <p class="stack">🗄️ Database: PostgreSQL, MongoDB</p>
       <p class="stack">⚙️ DevOps: CI/CD, Docker, Git</p>
-    </div>
-
-    <div class="section">
-      <h2>💼 Currently @ Airdata Technology</h2>
-      <p>Building and maintaining a flight ticketing system, optimizing performance and scalability for high-volume traffic.</p>
     </div>
 
     <div class="section">
@@ -106,9 +134,20 @@
     <div class="section">
       <h2>🚀 Notable Projects</h2>
       <ul>
-        <li>Hotel/hostel booking system</li>
-        <li>Blockchain-based platforms</li>
-        <li>Digital news portal</li>
+        <li>🛫 <strong>Flight Ticketing System</strong>: Building and maintaining a scalable flight booking system with
+          optimized performance for high-volume traffic.</li>
+        <li>⚡ <strong>Electricity System Monitoring</strong>: Developed a system to monitor and manage electrical grids,
+          ensuring efficient and reliable power distribution.</li>
+        <li>💳 <strong>Payment Gateway Integration</strong>: Integrated multiple payment gateways into existing
+          platforms, ensuring secure and seamless transactions.</li>
+        <li>🏫 <strong>University Management System</strong>: Designed and implemented a full-fledged management system
+          for universities, including student, faculty, and course management.</li>
+        <li>🏨 <strong>Hotel/Hostel Booking System</strong>: Developed a platform to manage hotel and hostel bookings
+          with user-friendly features and efficient management tools.</li>
+        <li>🔗 <strong>Blockchain-based Platforms</strong>: Built decentralized platforms using blockchain technology to
+          enhance transparency and security.</li>
+        <li>📰 <strong>Digital News Portal</strong>: Created a modern news portal with real-time updates and dynamic
+          content management.</li>
       </ul>
     </div>
 
@@ -120,4 +159,5 @@
     </div>
   </div>
 </body>
+
 </html>
